@@ -247,8 +247,14 @@
             .tool-card { padding: 24px 20px 20px; }
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        if (window.location.pathname.includes('/color-tool')) {
+            window.location.href = '/';
+        }
+    </script>
     <div class="bg-orbs">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
@@ -341,5 +347,6 @@
             <p>© 2025–2026 Michael Lim · <a href="https://github.com/michaelelim">GitHub</a> · Built with ☕ and zero meetings</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
